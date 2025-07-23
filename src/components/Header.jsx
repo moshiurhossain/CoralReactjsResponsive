@@ -16,7 +16,7 @@ const [showsearch,setShowsearch]=useState(false)
 
 
   return (
-    <header>
+    <header className='hidden lg:block'>
       {/* header container starts */}
        <div className="container">
         <div className="header_row pt-[31px] pb-[25px] border-b border-[#E3E3E3] flex justify-between items-center">
@@ -40,7 +40,7 @@ const [showsearch,setShowsearch]=useState(false)
       showsearch ?
       <>
            {/* overlay starts */}
-       <div onClick={()=>setShowsearch(false)} className='w-full h-screen bg-[#000000a1] absolute top-0 left-0'></div>
+       <div onClick={()=>setShowsearch(false)} className='w-full h-screen bg-[#00000065] absolute top-0 left-0'></div>
        {/* overlay ends */}
        {/* searchbar starts */}
        <div className='w-full bg-white h-[90px] absolute top-0 left-0 px-[50px] flex items-center justify-between'>

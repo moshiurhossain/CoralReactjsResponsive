@@ -40,8 +40,8 @@ const navbaritems =[
          <div className="container">
             <ul className='flex justify-between'>
               {
-                navbaritems.map((item)=>{
-                return <li><Link to={item.navbarlink} className='text-base font-opensans leading-[24px] font-normal'>{item.navbarcontent}</Link></li>
+                navbaritems.map((item,i)=>{
+                return <li key={i}><Link to={item.navbarlink} className='text-base font-opensans leading-[24px] font-normal'>{item.navbarcontent}</Link></li>
                 })
               }
 

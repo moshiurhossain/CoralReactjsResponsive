@@ -9,7 +9,7 @@ import logo from '../assets/images/logo.png'
 const Coverpage = () => {
   return (
     <>
-    <div className='bg-black '>
+    <div className='bg-black hidden lg:block'>
      <div>
         <div className='absolute bg-[#FAF7F3] left-[50%] bottom-[50%] z-10 px-2 translate-x-[-50%] translate-y-[-50%]  rounded-lg flex items-center justify-center  '>
             <Link to='/main'><img className='h-[40px]' src={logo} alt="logo" /></Link>

@@ -58,8 +58,8 @@ const ResponsiveMenu = () => {
                         </button>
                              <ul className='flex flex-col items-center gap-5 justify-center h-screen '>
               {
-                navbaritems.map((item)=>{
-                return <li><Link to={item.navbarlink} className='text-base font-opensans leading-[24px] font-medium text-primary'>{item.navbarcontent}</Link></li>
+                navbaritems.map((item,i)=>{
+                return <li key={i}><Link to={item.navbarlink} className='text-base font-opensans leading-[24px] font-medium text-primary'>{item.navbarcontent}</Link></li>
                 })
               }
 

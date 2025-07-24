@@ -14,7 +14,7 @@ const ResponsiveHeader = () => {
     
   return (
     <>
-    <header className='lg:hidden px-2 pt-5'>
+    <header className='lg:hidden px-2 pt-5 pb-1'>
       <div id='responsiveHeaderRow' className='flex justify-between items-center ' >
           <button onClick={()=>setShowinput(!showinput)} className='text-lg text-primary cursor-pointer'><CiSearch /></button>
           <img className='w-[150px]' src={logo} alt="logo" />

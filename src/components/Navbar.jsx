@@ -36,7 +36,7 @@ const navbaritems =[
 
   return (
     <>
-      <nav id='navbar' className='pt-[30px] hidden lg:block' >
+      <nav id='navbar' className='pt-[30px] hidden lg:block absolute w-full top-[120px]' >
          <div className="container">
             <ul className='flex justify-between'>
               {

@@ -46,8 +46,8 @@ const ResponsiveMenu = () => {
     <>
     
     <nav className='lg:hidden'>
-        <div className={`h-screen w-[280px] bg-white absolute top-0 ${showmenu?'left-0':'left-[-88%] duration-[.4s]'} z-30 duration-[1s]`}>
-                    <button  onClick={()=>setShowmenu(!showmenu)} className='w-[50px] h-[50px] text-2xl absolute top-[100px] cursor-pointer right-[-60px] z-10 text-primary bg-[] rounded-xl '>
+        <div className={`h-screen w-[250px] bg-white absolute top-0 ${showmenu?'left-0':'left-[-88%] duration-[.4s]'} z-30 duration-[1s] `}>
+                    <button  onClick={()=>setShowmenu(!showmenu)} className='w-[50px] h-[50px] text-2xl absolute top-[100px] cursor-pointer right-[-75px] z-10 text-primary bg-[] rounded-xl '>
                         {
                             showmenu?
                             <MdCancel />
@@ -67,7 +67,7 @@ const ResponsiveMenu = () => {
             </ul>
         </div>
 
-        <div className={`w-full h-screen absolute top-0 bg-[#0e0d0d4b] duration-[.4s] ${showmenu?'left-0':'left-[-100%] duration-[1s]'}`}></div>
+        <div className={`w-full h-screen absolute top-0 bg-[#0e0d0d4b] duration-[.4s] ${showmenu?'left-0 ':'left-[-100%] duration-[1s]'}`}></div>
     </nav>
     </>
   )

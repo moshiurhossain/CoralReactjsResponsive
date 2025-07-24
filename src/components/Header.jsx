@@ -16,7 +16,7 @@ const [showsearch,setShowsearch]=useState(false)
 
 
   return (
-    <header className='hidden lg:block'>
+    <header className='hidden lg:block absolute top-0 left-0 w-full'>
       {/* header container starts */}
        <div className="container">
         <div className="header_row pt-[31px] pb-[25px] border-b border-[#E3E3E3] flex justify-between items-center">

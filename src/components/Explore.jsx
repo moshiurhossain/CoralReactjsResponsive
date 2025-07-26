@@ -8,7 +8,7 @@ import { Link } from 'react-router'
 
 const Explore = () => {
   return (
-    <section id='explore' className='lg:pb-[140px] '>
+    <section id='explore' className=' '>
         <div className="container">
       <div className="explore-row flex  flex-col gap-6 lg:flex-row justify-center">
     <div className='explore-left lg:w-[648px] w-[300px] lg:h-[648px] relative mx-auto lg:mx-0'>

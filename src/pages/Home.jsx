@@ -4,6 +4,7 @@ import Brands from '../components/Brands'
 import Explore from '../components/Explore'
 import Subscribe from '../components/Subscribe'
 import BackgroungPart from '../components/BackgroungPart'
+import BestSeller from '../components/BestSeller'
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Explore/>
       <Subscribe/>
       <BackgroungPart/>
+      <BestSeller/>
     </div>
   )
 }

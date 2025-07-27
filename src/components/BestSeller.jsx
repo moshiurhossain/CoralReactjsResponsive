@@ -4,6 +4,9 @@ import { Link } from 'react-router'
 import { FaFilter } from "react-icons/fa6";
 import SingleCardproduct from './common/SingleCardproduct';
 import p1 from '../assets/images/p1.png'
+import p5 from '../assets/images/p5.png'
+import p3 from '../assets/images/p3.png'
+import p6 from '../assets/images/p6.png'
 
 const BestSeller = () => {
   return (
@@ -31,12 +34,12 @@ const BestSeller = () => {
          </div>
            {/* nav tabs ends */}
            {/* slider img start */}
-            <div className="sliderpart mt-[35px] flex flex-wrap lg:gap-[10px] justify-center">
+            <div className="sliderpart mt-[35px]  flex flex-wrap lg:gap-[24px] gap-2 justify-center">
                    <SingleCardproduct
-             pimg={p1}
-             ptitle={'Geometric print Scarf'}
-             pname={'Scarf'}
-             pprice={'$53.00'}
+             pimg={p5}
+             ptitle={'Basic Dress Green'}
+             pname={'Dress'}
+             pprice={'$236.00'}
              />
                    <SingleCardproduct
              pimg={p1}
@@ -45,16 +48,16 @@ const BestSeller = () => {
              pprice={'$53.00'}
              />
                    <SingleCardproduct
-             pimg={p1}
-             ptitle={'Geometric print Scarf'}
-             pname={'Scarf'}
-             pprice={'$53.00'}
+             pimg={p3}
+             ptitle={'Nike Sportswear Futura Luxe'}
+             pname={'Bag'}
+             pprice={'$130.00'}
              />
                    <SingleCardproduct
-             pimg={p1}
-             ptitle={'Geometric print Scarf'}
-             pname={'Scarf'}
-             pprice={'$53.00'}
+             pimg={p6}
+             ptitle={'Nike Air Zoom Pegasus'}
+             pname={'Shoe'}
+             pprice={'$220.00'}
              />
              
             </div>

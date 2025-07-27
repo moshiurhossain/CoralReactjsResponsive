@@ -9,7 +9,7 @@ const SingleCardproduct = ({pimg,ptitle,pname,pprice}) => {
     <div className="productimage w-full h-[400px] overflow-hidden group cursor-pointer">
         <img className='group-hover:scale-[1.1] duration-[.4s]' src={pimg} alt="productimage" />
     </div>
-    <div className="productdetails lg:mt-[18px] w-[292px] mx-auto">
+    <div className="productdetails lg:mt-[18px] mt-3 w-[292px] mx-auto">
          <h2 className='font-opensans lg:text-base font-semibold '>{ptitle}</h2>
          <div className="nameNprice flex justify-between mt-[16px] lg:text-base font-opensans">
            <p className='text-[#0000007c] font-normal'>{pname}</p>

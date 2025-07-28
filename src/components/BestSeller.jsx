@@ -7,8 +7,21 @@ import p1 from '../assets/images/p1.png'
 import p5 from '../assets/images/p5.png'
 import p3 from '../assets/images/p3.png'
 import p6 from '../assets/images/p6.png'
+import "slick-carousel/slick/slick.css";
+import Slider from "react-slick";
 
 const BestSeller = () => {
+
+const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1
+  };
+
+
+
   return (
     <section id='bestseller' className='lg:pt-[104px] pt-6'>
         <div className="container">
@@ -34,33 +47,43 @@ const BestSeller = () => {
          </div>
            {/* nav tabs ends */}
            {/* slider img start */}
-            <div className="sliderpart mt-[35px]  flex flex-wrap lg:gap-[24px] gap-2 justify-center">
-                   <SingleCardproduct
+               <div className="slider-container">
+                     <Slider {...settings}>
+                        <div>
+            <SingleCardproduct
              pimg={p5}
              ptitle={'Basic Dress Green'}
              pname={'Dress'}
              pprice={'$236.00'}
              />
-                   <SingleCardproduct
-             pimg={p1}
-             ptitle={'Geometric print Scarf'}
-             pname={'Scarf'}
-             pprice={'$53.00'}
+                        </div>
+                        <div>
+            <SingleCardproduct
+             pimg={p5}
+             ptitle={'Basic Dress Green'}
+             pname={'Dress'}
+             pprice={'$236.00'}
              />
-                   <SingleCardproduct
-             pimg={p3}
-             ptitle={'Nike Sportswear Futura Luxe'}
-             pname={'Bag'}
-             pprice={'$130.00'}
+                        </div>
+                        <div>
+            <SingleCardproduct
+             pimg={p5}
+             ptitle={'Basic Dress Green'}
+             pname={'Dress'}
+             pprice={'$236.00'}
              />
-                   <SingleCardproduct
-             pimg={p6}
-             ptitle={'Nike Air Zoom Pegasus'}
-             pname={'Shoe'}
-             pprice={'$220.00'}
+                        </div>
+                        <div>
+            <SingleCardproduct
+             pimg={p5}
+             ptitle={'Basic Dress Green'}
+             pname={'Dress'}
+             pprice={'$236.00'}
              />
-             
-            </div>
+                        </div>
+                     </Slider>
+         
+               </div>
            {/* slider img end */}
             </div>
         </section>

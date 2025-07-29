@@ -5,6 +5,7 @@ import Explore from '../components/Explore'
 import Subscribe from '../components/Subscribe'
 import BackgroungPart from '../components/BackgroungPart'
 import BestSeller from '../components/BestSeller'
+import Instapart from '../components/Instapart'
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <Subscribe/>
       <BackgroungPart/>
       <BestSeller/>
+      <Instapart/>
     </div>
   )
 }

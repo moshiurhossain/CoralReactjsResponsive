@@ -13,7 +13,7 @@
     z-index: 1;
     left: 1%;
     color: hsla(210, 24%, 16%, 0.616);
- 
+    cursor: pointer;
 }
 .slick-next{
     font-size: x-large;
@@ -23,6 +23,7 @@
     transform: translateY(-50%);
     z-index: 1;
     color: hsla(210, 24%, 16%, 0.616);
+    cursor: pointer;
 }
 .slider-rel{
     position: relative;

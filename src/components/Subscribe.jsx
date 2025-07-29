@@ -15,7 +15,7 @@ import p8 from '../assets/images/p8.png'
 
 const Subscribe = () => {
   return (
-    <section id='subscrbe' className='lg:pt-[140px] pt-[80px]'>
+    <section id='subscrbe' className='lg:pt-[140px] pt-[80px] lg:pb-[140px] pb-[80px]'>
        <div className="container">
          <CommonHeader 
          text='Or subscribe to the newsletter'

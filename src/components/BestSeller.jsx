@@ -69,7 +69,7 @@ const settings = {
             <button className='font-opensans font-semibold lg:text-base text-[12px] text-[#0000007e] capitalize'>hoodies</button>
             <button className='font-opensans font-semibold lg:text-base text-[12px] text-[#0000007e] capitalize'>jacket</button>
           </div>
-          <div className="sublinks ">
+          <div className="sublinks pb-1 lg:pb-4">
              <Link className='flex items-center justify-center lg:w-[92px] lg:h-[32px] w-[66px] lg:text-base text-[12px] font-opensans font-normal bg-primary text-white gap-1 '>
              <FaFilter />
              Filter

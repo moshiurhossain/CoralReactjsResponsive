@@ -9,6 +9,9 @@ import p3 from '../assets/images/p3.png'
 import p6 from '../assets/images/p6.png'
 import "slick-carousel/slick/slick.css";
 import Slider from "react-slick";
+import { IoIosArrowBack } from "react-icons/io";
+import { IoIosArrowForward } from "react-icons/io";
+import '../App.css'
 
 const BestSeller = () => {
 
@@ -17,7 +20,9 @@ const settings = {
     infinite: true,
     speed: 500,
     slidesToShow: 4,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    nextArrow: <IoIosArrowForward />,
+    prevArrow: <IoIosArrowBack />
   };
 
 
@@ -47,7 +52,7 @@ const settings = {
          </div>
            {/* nav tabs ends */}
            {/* slider img start */}
-               <div className="slider-container">
+               <div className="slider-container slider-rel">
                      <Slider {...settings}>
                         <div>
             <SingleCardproduct

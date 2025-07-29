@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import CommonHeader from './common/CommonHeader'
 import i1 from '../assets/images/i1.png'
 import i2 from '../assets/images/i2.png'
@@ -8,6 +8,19 @@ import i5 from '../assets/images/i5.png'
 import i6 from '../assets/images/i6.png'
 
 const Instapart = () => {
+
+
+  const [inputData,setInputdata]=useState('')
+  const [inputError,setInputError]=useState('')
+
+  const handleSubmit =()=>{
+    if(!inputData){
+        setInputError('Please Enter Input-data')
+    }else{
+        setInputError('')
+    }
+  }
+
   return (
     <section id='instapart ' className='lg:pt-[100px] pt-[60px] lg:pb-[100px] pb-[60px] bg-[rgba(30,40,50,0.05)]'>
         <div className="container">
@@ -36,9 +49,13 @@ const Instapart = () => {
 
          <CommonHeader text={'Or subscribe to the newsletter'}/>
 
+           <p className='text-center mt-5 text-red-600 font-semibold font-opensans'>{inputError}</p>
          <div className='w-full lg:w-[760px] flex lg:justify-between lg:flex-row flex-col mx-auto mt-[74px] lg:mt-[34px] lg:gap-[26px]'>
-            <div className='mx-auto lg:mx-0'><input className='lg:w-[643px] w-[300px] border-b-[2px] border-b-[#302d2d77] px-2  outline-0' placeholder='Email address...' type="text" /></div>
-            <button className='font-opensans font-normal text-base w-[91px] lg:mt-0 mt-6 mx-auto lg:mx-0 border-b-[2px] border-b-[#302d2d77]'>Submit</button>
+        
+            <div className='mx-auto lg:mx-0'><input onChange={(alu)=>{setInputdata(alu.target.value)}}
+            
+            className='lg:w-[643px] w-[300px] border-b-[2px] border-b-[#302d2d77] px-2  outline-0' placeholder='Email address...' type="text" /></div>
+            <button onClick={handleSubmit} className='font-opensans font-normal text-base w-[91px] lg:mt-0 mt-6 mx-auto lg:mx-0 border-b-[2px] border-b-[#302d2d77]'>Submit</button>
          </div>
          </div>
         </div>

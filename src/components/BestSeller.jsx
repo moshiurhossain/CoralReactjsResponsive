@@ -82,26 +82,26 @@ const settings = {
                      <Slider {...settings}>
                         <div>
             <SingleCardproduct
-             pimg={p5}
-             ptitle={'Basic Dress Green'}
-             pname={'Dress'}
-             pprice={'$236.00'}
+             pimg={p6}
+             ptitle={'Nike Air Zoom Pegasus'}
+             pname={'Shoe'}
+             pprice={'$220.00'}
              />
                         </div>
                         <div>
             <SingleCardproduct
-             pimg={p5}
-             ptitle={'Basic Dress Green'}
-             pname={'Dress'}
-             pprice={'$236.00'}
+             pimg={p1}
+             ptitle={'Geometric print Scarf'}
+             pname={'Scarf'}
+             pprice={'$53.00'}
              />
                         </div>
                         <div>
             <SingleCardproduct
-             pimg={p5}
-             ptitle={'Basic Dress Green'}
-             pname={'Dress'}
-             pprice={'$236.00'}
+             pimg={p3}
+             ptitle={'Nike Sportswear Futura Luxe'}
+             pname={'Bag'}
+             pprice={'$130.00'}
              />
                         </div>
                         <div>

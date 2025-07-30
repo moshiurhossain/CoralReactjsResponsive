@@ -6,6 +6,7 @@ import Subscribe from '../components/Subscribe'
 import BackgroungPart from '../components/BackgroungPart'
 import BestSeller from '../components/BestSeller'
 import Instapart from '../components/Instapart'
+import FooterPart from '../components/FooterPart'
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <BackgroungPart/>
       <BestSeller/>
       <Instapart/>
+      <FooterPart/>
     </div>
   )
 }

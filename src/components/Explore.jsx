@@ -12,8 +12,11 @@ const Explore = () => {
         <div className="container">
       <div className="explore-row flex  flex-col gap-6 lg:flex-row justify-center">
     <div className='explore-left lg:w-[648px] w-[300px] lg:h-[648px] relative mx-auto lg:mx-0 group'>
-       <Link to={'#'} className='relative'><img src={c10} alt="exploreimage" /></Link> 
+       <Link to={'#'} className=''><img src={c10} alt="exploreimage" />
+      
+        </Link> 
         <h2 className='font-roboto font-normal lg:text-[34px] text-[15px] absolute bottom-[50%] left-[-30%] lg:left-[-40%] rotate-[-90deg]'>Explore new and popular styles</h2>
+       
     </div>
     <div className='explore-right lg:w-[648px] w-[300px] mx-auto lg:mx-0 lg:h-[648px] flex flex-wrap  gap-6'>
         <div className=" w-[290px] h-[280px] relative group overflow-hidden">

@@ -15,9 +15,7 @@ const Instapart = () => {
 
   const handleSubmit =()=>{
     if(!inputData){
-        setInputError('Please Enter Input-data')
-    }else{
-        setInputError('')
+        setInputError('⚙ Please Enter Input-data')
     }
   }
 
@@ -52,10 +50,10 @@ const Instapart = () => {
            <p className='text-center mt-5 text-red-600 font-semibold font-opensans'>{inputError}</p>
          <div className='w-full lg:w-[760px] flex lg:justify-between lg:flex-row flex-col mx-auto mt-[74px] lg:mt-[34px] lg:gap-[26px]'>
         
-            <div className='mx-auto lg:mx-0'><input onChange={(alu)=>{setInputdata(alu.target.value)}}
+            <div className='mx-auto lg:mx-0'><input onChange={(item)=>{setInputdata(item.target.value),setInputError('')}}
             
             className='lg:w-[643px] w-[300px] border-b-[2px] border-b-[#302d2d77] px-2  outline-0' placeholder='Email address...' type="text" /></div>
-            <button onClick={handleSubmit} className='font-opensans font-normal text-base w-[91px] lg:mt-0 mt-6 mx-auto lg:mx-0 border-b-[2px] border-b-[#302d2d77]'>Submit</button>
+            <button onClick={handleSubmit} className='font-opensans cursor-pointer font-normal text-base w-[91px] lg:mt-0 mt-6 mx-auto lg:mx-0 border-b-[2px] border-b-[#302d2d77]'>Submit</button>
          </div>
          </div>
         </div>

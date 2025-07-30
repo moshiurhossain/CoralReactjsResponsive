@@ -4,7 +4,9 @@ import { FaFacebookF } from "react-icons/fa6";
 import { FaTwitter } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { CiInstagram } from "react-icons/ci";
-import { Link } from 'react-router';
+import { Link, Links } from 'react-router';
+import ci from '../assets/images/ci.png'
+import { FaArrowUp } from "react-icons/fa";
 
 
 const FooterPart = () => {
@@ -62,6 +64,18 @@ const FooterPart = () => {
        
     
       </div>
+     </div>
+     <div className='bottompart w-full bg-[#000] py-[15px]  '>
+              <div className="container flex lg:flex-row flex-col justify-between">
+         <p className='font-opensans font-normal text-white text-base text-center'>© 2022 Coral , Inc.</p>
+         <div className='w-[283px] lg:mt-0 mt-[60px] mx-auto lg:mx-0'><img src={ci} alt="creditcardimage" /></div>
+            <div className='flex w-[150px] font-opensans font-normal justify-evenly cursor-pointer  text-white text-base lg:mt-0 mt-[20px] mx-auto lg:mx-0'>
+            <Link className='' >Scroll to top</Link>
+            <FaArrowUp />
+
+            </div>   
+              </div>
+        
      </div>
       </footer>
   )
